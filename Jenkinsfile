@@ -1,7 +1,7 @@
 node {
     stage ("scm")
     {
-    git 'https://github.com/ghanigreen/maven_demo.git'
+    git 'https://github.com/jencyantony/maven_demo.git'
     }
     stage ("build")
     {
@@ -10,9 +10,6 @@ node {
     stage ("deploy")
     {
         echo "copy file"
-        sh 'cp -R "/c/Program Files (x86)/Jenkins/workspace/Jenkinemavendemo/gameoflife-web/target/gameoflife.war" "/c/Program Files/Apache Software Foundation/Tomcat 9.0_Tomcat10/webapps"'
+        sh 'cp -R "/c/Program Files (x86)/Jenkins/workspace/GameofLife/gameoflife-web/target/gameoflife.war" "/c/Program Files/Apache Software Foundation/Tomcat 8.5/webapps"'
     }
-
-    
-    
 }
